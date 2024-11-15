@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Bút Vẽ - Siêu Văn Phòng Phẩm Shop</title>
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="../../css/bootstrap.min.css">
+    <script src="../../js/jquery-3.7.1.min.js"></script>
+    <script src="../../js/bootstrap.min.js"></script>
+    <script src="../../js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+    <div class="container-md">
+        <div class="row">
+            <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+                <a class="navbar-brand" href="../../html/home.html">Siêu Văn Phòng Phẩm</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+                        aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="../../html/home.html">Trang Chủ</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../GDchinh/theodoidonhang.html">Theo dõi đơn hàng</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../GDchinh/phanhoi.html">Phản hồi</a>
+                        </li>
+                        <li class="nav-item">
+                            <div id="user_box"> 
+                                <a class="nav-link" href="../GDchinh/dangky.html" id="register_user"> Đăng ký </a>
+                                <div class="nav-link" id="kytu"> / </div>
+                                <a class="nav-link" href="../GDchinh/dangnhap.html" id="login_user"> Đăng nhập</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+        <div class="row">
+            <div class="header">
+                <img id="logo" src="../../img/header_img.png" alt="banner" usemap="#imageMap">
+                <map name="imageMap">
+                    <area shape="rect" coords="0,0,100,100" href="../../html/home.html" alt="home">
+                    <area shape="rect" coords="534,18,693,91" href="https://www.google.com/maps/place/12+Nguy%E1%BB%85n+V%C4%83n+B%E1%BA%A3o/@10.8223799,106.6848045,16.5z/data=!4m7!3m6!1s0x317528e5496d03cf:0xa5b8e7395ec636b9!4b1!8m2!3d10.8222053!4d106.6874994!16s%2Fg%2F11gd39c82c?hl=vi-VN&entry=ttu" alt="diachi">
+                </map>
+                <div class="search">
+                <input type="text"  placeholder="Tìm sản phẩm...">
+                <button type="search"><img src="../../img/lupe.png" alt="Search"></button>
+                <button type="search"><img src="../../img/giohang.png" alt="gio" id="giohang" title="giỏ hàng" onclick="window.location.href='../GDchinh/GioHang.html'"></button>
+            </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                      <ul class="navbar-nav">
+                        <li class="nav-item dropdown">
+                          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Bút - Viết
+                          </a>
+                          <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <a class="dropdown-item" href="../ButViet/ButBi.html">Bút Bi - Ruột Bút Bi</a>
+                            <a class="dropdown-item" href="../ButViet/ButGel.html">Bút Gel - Bút Nước</a>
+                            <a class="dropdown-item" href="../ButViet/ButMuc.html">Bút Mực - Bút Máy</a>
+                            <a class="dropdown-item" href="../ButViet/ButDaQuang.html">Bút Dạ Quang</a>
+                          </div>
+                        </li>
+                        <li class="nav-item dropdown">
+                          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Dụng Cụ Học Sinh
+                          </a>
+                          <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <a class="dropdown-item" href="../Gom/GomTay.html">Gôm Tẩy</a>
+                            <a class="dropdown-item" href="../Gom/GotButChi.html">Gọt Bút Chì</a>
+                          </div>
+                        </li>
+                        <li class="nav-item dropdown">
+                          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Dụng Cụ Văn Phòng
+                          </a>
+                          <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">  
+                            <a class="dropdown-item" href="../BiaKepGiay/Bia.html">Bìa - File Hồ Sơ</a>
+                            <a class="dropdown-item" href="../BiaKepGiay/KepGiay.html">Kẹp Giấy - Kẹp Bướm</a>
+                          </div>
+                        </li>
+                        <li class="nav-item dropdown">
+                          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Dụng Cụ Vẽ
+                          </a>
+                          <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <a class="dropdown-item" href="../ButMau/ButVe.html">Bút Vẽ</a>
+                            <a class="dropdown-item" href="../ButMau/MauVe.html">Màu Vẽ</a>
+                          </div>
+                        </li>
+                        <li class="nav-item dropdown">
+                          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Sản Phẩm Về Giấy
+                          </a>
+                          <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <a class="dropdown-item" href="../SoTay/TapVo.html">Tập - Vở</a>
+                            <a class="dropdown-item" href="../SoTay/SoTay.html">Sổ Tay Các Loại</a>
+                          </div>
+                        </li>
+                        <li class="nav-item dropdown">
+                          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Sản Phẩm Khác
+                          </a>
+                          <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <a class="dropdown-item" href="../BangKeo/DaoRocGiay.html">Dao Rọc Giấy</a>
+                            <a class="dropdown-item" href="../BangKeo/BangKeo.html">Băng Keo</a>
+                          </div>
+                        </li>
+
+                      </ul>
+                  </div>
+                </nav>
+            </div>
+            
+        </div>
+        <div class="row sp">
+          <div class="col-md-4">
+            <div class="product-box">
+              <a href="../../html/GDchinh/theodoidonhang.html">
+                <img src="../../img/ButLongMau1.webp" alt="Product" class="product-img">
+              </a>
+              <h5 class="text-center" id="tensp">Hộp 36 Bút Lông Màu Acrylic Marker - Sheng Bo Shi 206A</h5>
+              <p class="text-center" id="gia">158.400₫</p>
+              <div class="text-center">
+                <button class="btn btn-primary">Xem chi tiết</button>
+                <button class="btn btn-success addToCartBtn" data-id="401" data-name="Hộp 36 Bút Lông Màu Acrylic Marker - Sheng Bo Shi 206A" data-price="158400">Thêm vào giỏ hàng</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="product-box">
+              <a href="../../html/GDchinh/theodoidonhang.html">
+                <img src="../../img/ButLongMau2.webp" alt="Product" class="product-img">
+              </a>
+              <h5 class="text-center" id="tensp">Hộp 48 Bút Marker Acrylic - Deli EC189-48
+              </h5>
+              <p class="text-center" id="gia">218.400₫</p>
+              <div class="text-center">
+                <button class="btn btn-primary">Xem chi tiết</button>
+                <button class="btn btn-success addToCartBtn" data-id="402" data-name="Hộp 48 Bút Marker Acrylic - Deli EC189-48" data-price="218400">Thêm vào giỏ hàng</button>
+              </div>
+            </div>
+          </div>
+
+          <script>
+            // Hàm thêm vào giỏ hàng
+            function addToCart(product) {
+              let cart = JSON.parse(localStorage.getItem('cart')) || [];
+              let productIndex = cart.findIndex(item => item.id === product.id);
+        
+              if (productIndex !== -1) {
+                cart[productIndex].quantity += 1;
+              } else {
+                cart.push(product);
+              }
+        
+              localStorage.setItem('cart', JSON.stringify(cart));
+              alert(`${product.name} đã được thêm vào giỏ hàng!`);
+            }
+        
+            // Gắn sự kiện cho tất cả các nút "Thêm vào giỏ hàng"
+            document.querySelectorAll('.addToCartBtn').forEach(button => {
+              button.addEventListener('click', function() {
+                const product = {
+                  id: parseInt(this.getAttribute('data-id')),
+                  name: this.getAttribute('data-name'),
+                  price: parseInt(this.getAttribute('data-price')),
+                  image: this.getAttribute('data-image'),
+                  quantity: 1
+                };
+                addToCart(product);
+              });
+            });
+          </script>
+        </div>
+        <div class="row footer">
+            <div class="col-md-12 footer-content">
+              <p>Công ty tajDD - Địa chỉ: 12 Nguyễn Văn Bảo, Gò Vấp, Thành phố HCM</p>
+              <p>Số điện thoại: 0777 505 730 - Email: 22717171.dat@student.iuh.edu.vn</p>
+              <div class="footer-links">
+                <a href="../../html/home.html">Trang chủ</a>
+                <a href="#">Sản phẩm</a>
+                <a href="#">Thông tin</a>
+                <a href="#">Chính sách bảo hành</a>
+                <a href="../../html/GDchinh/sitemap.html">Sitemap</a>
+              </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
